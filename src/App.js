@@ -12,8 +12,8 @@ function App() {
     <div className="App">
       <NavBar />
       <IntroComponent />
-      <ContactUs />
       <AboutUs />
+      <ContactUs />
       <Faq />
       <Terms/>
 
