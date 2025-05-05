@@ -50,7 +50,7 @@
 }
 
 .service-block {
-  background-color: #fff;
+  background-color: #008060;
   padding: 2.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -58,21 +58,22 @@
 }
 
 .service-block h4 {
-  color: #2c3e50;
+  color: #ebecee;
   font-size: 1.6rem;
   margin-bottom: 1rem;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .service-block p {
   margin-bottom: 1rem;
-  color: #666;
+  color: #dfd9d9;
 }
 
 .service-block ul {
   padding-left: 1.5rem;
   list-style: none;
-  color: #555;
+  color: #ebe5e5;
+  font-weight: bold;
 }
 
 .service-block ul li {
