@@ -66,7 +66,8 @@
 
 .service-block p {
   margin-bottom: 1rem;
-  color: #dfd9d9;
+  color: rgb(202, 76, 76);
+  font-weight: bold;
 }
 
 .service-block ul {
@@ -112,19 +113,21 @@ ul li::before {
 }
 
 .section p {
-  color: #555;
+  color: #0f4919;
   font-size: 1.1rem;
+  font-weight: bold;
 }
 
 .section ul {
   margin-top: 1rem;
+  font-weight: bold;
 }
 
 .section ul li {
   margin-bottom: 0.8rem;
 }
 
-/* Emoji for Sections */
+
 .section h3::before {
   content: "🌱";
   margin-right: 0.5rem;
