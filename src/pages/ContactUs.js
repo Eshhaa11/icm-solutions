@@ -15,7 +15,7 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission (send email, show success message, etc.)
+    
     console.log("Form submitted:", formData);
   };
 
