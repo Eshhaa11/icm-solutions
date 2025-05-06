@@ -1,33 +1,116 @@
 
 .faq-page {
-  padding: 40px;
-  background-color: #bae4c5;
+  padding: 30px;
+  background: #006D5B; 
   font-family: "Segoe UI", sans-serif;
   color: #034232;
+  max-width: 960px; 
+  margin: 0 auto; 
+  border-radius: 8px; 
 }
 
 .faq-page h1 {
-  color: #016844;
-  font-size: 2.4rem;
+  color: #e4e8e7;
+  font-size: 20px;
   margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.5px;
 }
 
 .faq-item {
   background-color: #ffffff;
-  border-left: 4px solid #016844;
+  border-left: 5px solid #016844;
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(1, 104, 68, 0.08);
+  box-shadow: 0 2px 12px rgba(1, 104, 68, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 20px rgba(1, 104, 68, 0.15);
 }
 
 .faq-item h3 {
-  margin: 0 0 10px 0;
+  margin: 0 0 12px 0;
   color: #016844;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 .faq-item p {
   margin: 0;
   font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+@media (max-width: 1024px) {
+  .faq-page {
+    padding: 20px;
+  }
+
+  .faq-page h1 {
+    font-size: 2rem;
+  }
+
+  .faq-item {
+    padding: 18px;
+  }
+
+  .faq-item h3 {
+    font-size: 1.15rem;
+  }
+
+  .faq-item p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-page {
+    padding: 15px;
+  }
+
+  .faq-page h1 {
+    font-size: 1.8rem;
+  }
+
+  .faq-item {
+    padding: 15px;
+  }
+
+  .faq-item h3 {
+    font-size: 1rem;
+  }
+
+  .faq-item p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-page {
+    padding: 10px;
+  }
+
+  .faq-page h1 {
+    font-size: 1.6rem;
+  }
+
+  .faq-item {
+    padding: 12px;
+  }
+
+  .faq-item h3 {
+    font-size: 0.95rem;
+  }
+
+  .faq-item p {
+    font-size: 0.85rem;
+  }
 }
