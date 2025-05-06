@@ -1,4 +1,3 @@
-
 import React from "react";
 import "../styles/ContactUs.css";
 
@@ -11,9 +10,9 @@ const ContactUs = () => {
       <div className="contact-wrapper">
         <div className="contact-details">
           <h2>Our Office</h2>
-          <p><strong>Address:</strong> 123 Greenway Blvd, Nairobi, Kenya</p>
-          <p><strong>Email:</strong> support@greengrowseeds.com</p>
-          <p><strong>Phone:</strong> +254 700 123 456</p>
+          <p><strong>Address:</strong> Milimani Apartment G4, Lena Moi Road, Nakuru, Kenya</p>
+          <p><strong>Email:</strong> info@icm.co.ke</p>
+          <p><strong>Phone:</strong> +254 95216873</p>
         </div>
 
         <div className="contact-form">

@@ -9,7 +9,7 @@ import Faq from './pages/Faq';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <NavBar />
       <IntroComponent />
       <AboutUs />
