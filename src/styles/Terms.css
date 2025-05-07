@@ -1,8 +1,7 @@
-body {
-  background-color: #006D5B;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+.terms-wrapper {
+  background-color: #dedede; 
+  min-height: 100vh;
+  padding: 40px 0;
 }
 
 .terms-container {
