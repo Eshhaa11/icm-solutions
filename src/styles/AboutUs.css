@@ -13,7 +13,7 @@
   text-align: center;
 }
 
-.about-page p {
+.about-page > p {
   font-size: 17px;
   font-weight: bold;
   line-height: 1.7;
@@ -43,13 +43,13 @@
   color: #016844;
   margin-bottom: 10px;
   font-size: 20px;
+  
 }
 
 
 .about-sections p {
   color: #033b2b;
   font-size: 18px;
-  font-weight: medium; 
   margin: 10px 0;
 }
 
@@ -62,7 +62,7 @@
 .about-sections li {
   margin-bottom: 10px;
   font-size: 16px;
-  font-weight: bold;
+  
 }
 
 
