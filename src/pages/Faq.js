@@ -1,4 +1,3 @@
-// src/components/FAQ.jsx
 import React, { useState } from "react";
 import "../styles/Faq.css";
 
@@ -49,25 +48,23 @@ const Faq = () => {
 
   return (
     <div className="faq-wrapper">
-      <div className="faq-container">
-        <h1 className="faq-title">Frequently Asked Questions</h1>
-        <div className="faq-list">
-          {faqs.map((faq, index) => (
-            <div
-              className={`faq-item ${activeIndex === index ? "open" : ""}`}
-              key={index}
-              onClick={() => toggle(index)}
-            >
-              <div className="faq-question">
-                {faq.question}
-                <span className="faq-icon">{activeIndex === index ? "▲" : "▼"}</span>
-              </div>
-              <div className="faq-answer">
-                {faq.answer}
-              </div>
+      <h1 className="faq-title">Frequently Asked Questions</h1>
+      <div className="faq-list">
+        {faqs.map((faq, index) => (
+          <div
+            className={`faq-item ${activeIndex === index ? "open" : ""}`}
+            key={index}
+            onClick={() => toggle(index)}
+          >
+            <div className="faq-question">
+              {faq.question}
+              <span className="faq-icon">{activeIndex === index ? "▲" : "▼"}</span>
             </div>
-          ))}
-        </div>
+            <div className="faq-answer">
+              {faq.answer}
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
