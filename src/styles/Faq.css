@@ -82,9 +82,8 @@
   transform: rotate(180deg);
 }
 
-/* ---------- Responsive Styles ---------- */
 
-/* Small phones and below (≤ 480px) */
+
 @media (max-width: 480px) {
   .faq-wrapper {
     padding: 15px;
@@ -118,7 +117,7 @@
   }
 }
 
-/* Tablets (481px – 768px) */
+
 @media (min-width: 481px) and (max-width: 768px) {
   .faq-title {
     font-size: 28px;
@@ -151,7 +150,7 @@
   }
 }
 
-/* Small laptops (769px – 1024px) */
+
 @media (min-width: 769px) and (max-width: 1024px) {
   .faq-wrapper {
     padding: 30px;
@@ -179,7 +178,7 @@
   }
 }
 
-/* Large screens (1025px+) */
+
 @media (min-width: 1025px) {
   .faq-wrapper {
     padding: 40px;
