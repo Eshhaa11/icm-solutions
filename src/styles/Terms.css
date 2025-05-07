@@ -1,146 +1,167 @@
+body {
+  background-color: #006D5B;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
 
-.terms-page {
+.terms-container {
+  max-width: 900px;
+  margin: 40px auto;
   padding: 40px;
-  background-color: #006D5B; 
-  font-family: "Segoe UI", sans-serif;
-  color: #f1f6f5;
-  line-height: 1.8; 
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
-  margin: 20px auto;
-  max-width: 1100px;
+  background-color: #e7e9e7;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-left: 6px solid #2f4f2f;
+  box-sizing: border-box;
 }
 
+.terms-container h1 {
+  font-size: 40px;
+  text-align: center;
+  color: #2f4f2f;
+  margin-bottom: 30px;
+}
 
-.terms-page h1 {
-  color: #cfdbd6; 
-  font-size: 28px;
+.terms-content h2 {
+  font-size: 24px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #2f4f2f;
+}
+
+.terms-content p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.terms-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.accept-btn,
+.decline-btn {
+  padding: 12px 24px;
+  font-size: 16px;
   font-weight: 600;
-  margin-bottom: 20px;
-  text-align: center; 
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border-bottom: 3px solid #e9eaea; 
-  padding-bottom: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 120px;
 }
 
-.terms-page p {
-  font-size: 12px;
-  margin-bottom: 30px;
-  color: #e1dede; 
-  text-align: center; 
-  line-height: 1.7;
+.accept-btn {
+  background-color: #4caf50;
+  color: #fff;
 }
 
-
-.terms-page ol {
-  padding-left: 20px;
-  margin-bottom: 30px;
+.accept-btn:hover {
+  background-color: #3e9442;
 }
 
+.decline-btn {
+  background-color: #a94442;
+  color: #fff;
+}
 
-.terms-page li {
-  margin-bottom: 20px;
-  font-size: 18px;
+.decline-btn:hover {
+  background-color: #922b21;
+}
+
+.confirmation-msg {
+  text-align: center;
+  margin-top: 30px;
+  color: #2f4f2f;
   font-weight: bold;
-  color: #e5efec;
-  line-height: 1.8;
-  padding-left: 20px;
-  position: relative;
+  font-size: 18px;
 }
 
-.terms-page li::before {
-  content: "✔"; 
-  color: #ebf3f0; 
-  position: absolute;
-  left: 0;
-  top: 2px;
-  font-size: 1.3rem; 
-}
-
-
-.terms-page strong {
-  color: #c7ccca;
-  font-weight: 600;
-}
-
-
-@media (max-width: 1200px) {
-  .terms-page {
-    padding: 30px;
+/* Responsive: Tablets (up to 1024px) */
+@media (max-width: 1024px) {
+  .terms-container {
+    padding: 30px 25px;
   }
 
-  .terms-page h1 {
-    font-size: 2rem;
+  .terms-container h1 {
+    font-size: 36px;
   }
 
-  .terms-page p {
-    font-size: 0.95rem;
+  .terms-content h2 {
+    font-size: 22px;
   }
 
-  .terms-page li {
-    font-size: 1rem;
+  .terms-content p {
+    font-size: 15px;
   }
 }
 
+/* Responsive: Small tablets & large phones (up to 768px) */
 @media (max-width: 768px) {
-  .terms-page {
-    padding: 20px;
+  .terms-container {
+    padding: 25px 20px;
+    margin: 20px;
   }
 
-  .terms-page h1 {
-    font-size: 1.8rem;
+  .terms-container h1 {
+    font-size: 30px;
   }
 
-  .terms-page p {
-    font-size: 0.9rem;
+  .terms-content h2 {
+    font-size: 20px;
   }
 
-  .terms-page ol {
-    padding-left: 15px;
+  .terms-content p {
+    font-size: 14px;
+    line-height: 24px;
   }
 
-  .terms-page li {
-    font-size: 0.95rem;
+  .accept-btn,
+  .decline-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+    min-width: 100px;
+  }
+
+  .confirmation-msg {
+    font-size: 16px;
   }
 }
 
+/* Responsive: Small phones (up to 480px) */
 @media (max-width: 480px) {
-  .terms-page {
-    padding: 15px;
+  .terms-container {
+    padding: 20px 15px;
+    margin: 10px;
   }
 
-  .terms-page h1 {
-    font-size: 1.6rem;
+  .terms-container h1 {
+    font-size: 26px;
   }
 
-  .terms-page p {
-    font-size: 0.85rem;
+  .terms-content h2 {
+    font-size: 18px;
   }
 
-  .terms-page ol {
-    padding-left: 0;
+  .terms-content p {
+    font-size: 13px;
+    line-height: 22px;
   }
 
-  .terms-page li {
-    font-size: 0.85rem;
-  }
-}
-
-@media (max-width: 360px) {
-  .terms-page {
-    padding: 10px;
+  .accept-btn,
+  .decline-btn {
+    font-size: 13px;
+    padding: 8px 16px;
+    min-width: 90px;
   }
 
-  .terms-page h1 {
-    font-size: 1.4rem;
-  }
-
-  .terms-page p {
-    font-size: 0.8rem;
-  }
-
-  .terms-page li {
-    font-size: 0.8rem;
+  .confirmation-msg {
+    font-size: 14px;
   }
 }
