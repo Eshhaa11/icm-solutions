@@ -6,7 +6,7 @@ const Terms = ({ onAccept, onDecline }) => {
 
   const handleAccept = () => {
     setAccepted(true);
-    onAccept && onAccept(); // callback to parent
+    onAccept && onAccept(); 
   };
 
   const handleDecline = () => {
