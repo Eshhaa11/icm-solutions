@@ -13,7 +13,7 @@ const AboutUs = () => {
         Our foundation is built on innovation, scientific integrity, and a commitment
         to environmental sustainability.
       </p>
-
+    
       <div className="about-sections">
         <div>
           <h2>Our Mission</h2>
