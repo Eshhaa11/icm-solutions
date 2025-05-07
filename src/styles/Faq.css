@@ -57,12 +57,13 @@
 }
 
 .faq-item.open .faq-icon {
-  transform: rotate(180deg); /* Rotate the arrow down when opened */
+  transform: rotate(180deg); 
 }
 
-/* Add arrow styling */
+
 .faq-icon {
   font-size: 22px;
+  font-weight: bold;
   color: #4caf50;
   margin-left: 10px;
   transition: transform 0.3s ease;
@@ -73,9 +74,7 @@
   transform: rotate(180deg);
 }
 
-/* --- Media Queries for Responsiveness --- */
 
-/* Mobile (up to 768px) */
 @media (max-width: 768px) {
   .faq-title {
     font-size: 28px;
@@ -100,7 +99,6 @@
   }
 }
 
-/* Tablet (768px to 1024px) */
 @media (max-width: 1024px) {
   .faq-container {
     padding: 30px;
