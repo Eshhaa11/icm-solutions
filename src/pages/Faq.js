@@ -1,3 +1,4 @@
+// src/components/FAQ.jsx
 import React, { useState } from "react";
 import "../styles/Faq.css";
 
@@ -47,24 +48,33 @@ const Faq = () => {
   };
 
   return (
-    <div className="faq-wrapper">
-      <h1 className="faq-title">Frequently Asked Questions</h1>
-      <div className="faq-list">
-        {faqs.map((faq, index) => (
-          <div
-            className={`faq-item ${activeIndex === index ? "open" : ""}`}
-            key={index}
-            onClick={() => toggle(index)}
-          >
-            <div className="faq-question">
-              {faq.question}
-              <span className="faq-icon">{activeIndex === index ? "▲" : "▼"}</span>
+    <div className="faq-page">
+      <div className="faq-wrapper">
+        <h1 className="faq-title">Frequently Asked Questions</h1>
+        <p className="faq-subtitle">
+      Get quick answers to common questions about our seeds, services, and support.
+    </p>
+        <div className="faq-list">
+          {faqs.map((faq, index) => (
+            <div
+              className={`faq-item ${activeIndex === index ? "open" : ""}`}
+              key={index}
+              onClick={() => toggle(index)}
+            >
+              <div className="faq-question">
+                {faq.question}
+                <span className="faq-icon">
+                  {activeIndex === index ? "▲" : "▼"}
+                </span>
+              </div>
+              <div className="faq-answer">{faq.answer}</div>
             </div>
-            <div className="faq-answer">
-              {faq.answer}
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
+
+        <p className="faq-bottom-note">
+      Still have questions? Feel free to reach out to our team for personalized help.
+    </p>
       </div>
     </div>
   );
